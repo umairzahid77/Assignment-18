@@ -1,8 +1,90 @@
-#into{
-    background-color:rgb(145, 207, 124);
+#into {
+    background-color: rgb(145, 207, 124);
     padding: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     text-align: center;
     justify-content: center;
+}
+
+body {
+    background-color: rgb(145, 207, 124);
+}
+
+#body {
+    width: 1300px;
+    margin-top: 150px !important;
+    margin: auto;
+}
+
+/* nav bar */
+
+.top {
+    width: 1300px;
+    margin: auto;
+}
+
+.navbar {
+    padding: 0%;
+    margin: 0%;
+}
+
+.nav-link {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.nav-link div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 700,
+        'GRAD' 200,
+        'opsz' 48
+}
+
+/* nav bar 2 */
+
+.line2 {
+    display: flex;
+    align-items: start;
+}
+
+.drop-down {
+    margin: 0 10px;
+    width: 250px;
+    font-size: 21px;
+    text-align: start;
+}
+
+.dropdown_item {
+    width: 250px;
+    font-size: 21px;
+}
+
+.blue {
+    color: #3a77ff;
+}
+
+.d-flex {
+    margin: 0 20px;
+    width: 750px;
+}
+
+.sell{
+    width: 100px;
+}
+
+.test {
+    background-color: saddlebrown;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
 }

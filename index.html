@@ -8,12 +8,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=apartment" />
     <title>Assignment # __</title>
 
 </head>
 
 <body>
-    <hr>
+    <!-- <hr>
     <div id="into">
         <i>
             <u>
@@ -23,10 +25,597 @@
             </u>
         </i>
     </div>
-    <hr>
+    <hr> -->
+
+    <!-- nav bar starts here -->
+
+    <div class="fixed-top top">
+
+        <!-- navbar 1 -->
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/images/logo.jpg" alt="Bootstrap" width="70" height="70"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><i
+                                    class="fa-solid fa-car fa-2xl"></i> <b>Motors</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <div>
+                                    <span class="material-symbols-outlined">
+                                        apartment
+                                    </span>
+                                    <b>Property</b>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- navbar 2 -->
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse line2" id="navbarScroll">
+                    <ul class="navbar-nav my-lg-0 navbar-nav-scroll drop-down" style="--bs-scroll-height: 100px;">
+                        <div class="dropdown drop_down btn-lg">
+                            <button class="btn drop-down dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                data-bs-display="static" aria-expanded="false">
+                                <i class="fa-solid fa-location-dot"></i> Pakistan
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item blue" href="#"><i
+                                            class="fa-solid fa-location-crosshairs"></i> <b> Use Curent Location</b></a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-location-dot"></i> See
+                                        ads in all Pakistan</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <div class="input-group input-group-lg mb-3">
+                            <input type="text" class="form-control" placeholder="Find Cars, Mobile Phones and more..."
+                                aria-label="Recipient’s username" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
+                                    class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></button>
+                        </div>
+                    </form>
+                    <button type="button" class="btn btn-lg btn-link"><b>Login</b></button>
+                    <button class="btn btn-lg btn-outline-dark sell" type="submit"><i
+                            class="fa-solid fa-plus fa-lg"></i> <b> Sell</b></button>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+    <!-- nav bar ends here -->
+
+    <div id="body">
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false">All categories</a>
+                <ul class="dropdown-menu row">
+                    <!-- <li><a class="dropdown-item" href="#">Action</a></li> -->
+                    <div class="col-12 row top">
+                        <div class="col-3">
+                            Mobiles
+                            Mobile Phones
+                            Accessories
+                            Smart Watches
+                            Tablets
+                            Vehicles
+                            Cars
+                            Cars Accessories
+                            Spare Parts
+                            Buses, Vans & Trucks
+                            Rickshaw & Chingchi
+                            Tractors & Trailers
+                            Car Care
+                            Cars on Installments
+                            Other Vehicles
+                            Boats
+                            Oil & Lubricants
+                            Property for Sale
+                            Land & Plots
+                            Houses
+                            Apartments & Flats
+                            Shops - Offices - Commercial Space
+                            Portions & Floors
+                            Property for Rent
+                            Houses
+                            Portions & Floors
+                            Apartments & Flats
+                            Shops - Offices - Commercial Space
+                            Rooms
+                            Vacation Rentals - Guest Houses
+                            Roommates & Paying Guests
+                            Land & Plots
+                            Electronics & Home Appliances
+                            Computers & Accessories
+                            Televisions & Accessories
+                            AC & Coolers
+                            Generators, UPS & Power Solutions
+                            Refrigerators & Freezers
+                            Cameras & Accessories
+                            Games & Entertainment
+                            Kitchen Appliances
+                            Other Home Appliances
+                            Video-Audios
+                            Fans
+                            Washing Machines & Dryers
+                            Microwaves & Ovens
+                            Heaters & Geysers
+                            Sewing Machines
+                            Water Dispensers
+                            Irons & Steamers
+                            Air Purifiers & Humidifiers        
+                        </div>
+                        <div class="col-3">
+                            Bikes
+                            Motorcycles
+                            Bicycles
+                            Spare Parts
+                            Bikes Accessories
+                            Scooters
+                            ATV & Quads
+                            Business, Industrial & Agriculture
+                            Other Business & Industry
+                            Food & Restaurants
+                            Medical & Pharma
+                            Trade & Industrial Machinery
+                            Business for Sale
+                            Construction & Heavy Machinery
+                            Agriculture
+                            Services
+                            Other Services
+                            Home & Office Repair
+                            Tuitions & Academies
+                            Car Rental
+                            Domestic Help
+                            Web Development
+                            Travel & Visa
+                            Drivers & Taxi
+                            Event Services
+                            Electronics & Computer Repair
+                            Consultancy Services
+                            Construction Services
+                            Health & Beauty
+                            Farm & Fresh Food
+                            Architecture & Interior Design
+                            Movers & Packers
+                            Video & Photography
+                            Renting Services
+                            Car Services
+                            Catering & Restaurant
+                            Tailor Services
+                            Camera Installation
+                            Insurance Services        
+                        </div>
+                        <div class="col-3">
+                            Jobs
+                            Other Jobs
+                            Online
+                            Part Time
+                            Sales
+                            Restaurants & Hospitality
+                            Customer Service
+                            Marketing
+                            Domestic Staff
+                            Education
+                            Content Writing
+                            Medical
+                            Delivery Riders
+                            IT & Networking
+                            Accounting & Finance
+                            Graphic Design
+                            Security
+                            Clerical & Administration
+                            Hotels & Tourism
+                            Engineering
+                            Manufacturing
+                            Human Resources
+                            Real Estate
+                            Advertising & PR
+                            Internships
+                            Architecture & Interior Design
+                            Animals
+                            Hens
+                            Parrots
+                            Cats
+                            Livestock
+                            Dogs
+                            Pet Food & Accessories
+                            Pigeons
+                            Rabbits
+                            Finches
+                            Fish
+                            Other Birds
+                            Fertile Eggs
+                            Ducks
+                            Other Animals
+                            Doves
+                            Peacocks
+                            Horses        
+                        </div>
+                        <div class="col-3">
+                            Furniture & Home Decor
+                            Sofa & Chairs
+                            Beds & Wardrobes
+                            Tables & Dining
+                            Other Household Items
+                            Office Furniture
+                            Home Decoration
+                            Garden & Outdoor
+                            Painting & Mirrors
+                            Curtains & Blinds
+                            Rugs & Carpets
+                            Bathroom Accessories
+                            Fashion & Beauty
+                            Clothes
+                            Watches
+                            Wedding
+                            Footwear
+                            Skin & Hair
+                            Jewellery
+                            Bags
+                            Fragrance
+                            Fashion Accessories
+                            Makeup
+                            Other Fashion
+                            Books, Sports & Hobbies
+                            Gym & Fitness
+                            Sports Equipment
+                            Other Hobbies
+                            Books & Magazines
+                            Musical Instruments
+                            Kids
+                            Kids Vehicles
+                            Baby Gear
+                            Toys
+                            Kids Furniture
+                            Swings & Slides
+                            Kids Clothing
+                            Kids Accessories
+                            Bath & Diapers        
+                        </div>
+                    </div>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+        </ul>
 
 
-    
+
+
+        
+
+        <div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
