@@ -2,15 +2,33 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome cdn -->
     <script src="https://kit.fontawesome.com/3fa963229c.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+
+    <!-- owl carousel cdn (cdnjs.com)-->
+    <link rel="stylesheet" href="./assets/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/owlcarousel/owl.theme.default.min.css" />
+
+    <!-- swiper carousel cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- goole icons -->
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=apartment" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,-25&icon_names=apartment" />
+
+    <!-- local css -->
+    <link rel="stylesheet" href="./style.css">
+
     <title>Assignment # 18</title>
+
 </head>
 
 <body>
@@ -33,27 +51,24 @@
         <!-- navbar 1 -->
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
+            <div class="container-fluid line_1">
                 <a class="navbar-brand" href="#">
-                    <img src="./assets/images/logo.jpg" alt="Bootstrap" width="70" height="70"></a>
+                    <img src="./assets/images/logo.jpg" alt="OLX" width="70" height="70"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                     aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><i
-                                    class="fa-solid fa-car fa-2xl"></i> <b>Motors</b></a>
+                <div class="collapse navbar-collapse line_1" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll line_1"
+                        style="--bs-scroll-height: 100px;">
+                        <li class="nav-item" style="margin-top: 5px;">
+                            <a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-car fa-2xl"></i>
+                                <b>Motors</b></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
-                                <div>
-                                    <span class="material-symbols-outlined">
-                                        apartment
-                                    </span>
-                                    <b>Property</b>
-                                </div>
+                                <img src="./assets/images/apartments.png" width="35px" alt="">
+                                <b>Property</b>
                             </a>
                         </li>
                     </ul>
@@ -67,28 +82,31 @@
             <div class="container-fluid">
                 <div class="collapse navbar-collapse line2" id="navbarScroll">
                     <ul class="navbar-nav my-lg-0 navbar-nav-scroll drop-down" style="--bs-scroll-height: 100px;">
-                        <div class="dropdown drop_down btn-lg">
-                            <button class="btn drop-down dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                data-bs-display="static" aria-expanded="false">
-                                <i class="fa-solid fa-location-dot"></i> Pakistan
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item blue" href="#"><i
-                                            class="fa-solid fa-location-crosshairs"></i> <b> Use Curent Location</b></a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-location-dot"></i> See
-                                        ads in all Pakistan</a></li>
-                            </ul>
-                        </div>
+                        <li>
+                            <div class="dropdown drop_down btn-lg">
+                                <button class="btn drop-down dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    data-bs-display="static" aria-expanded="false">
+                                    <i class="fa-solid fa-location-dot"></i> Pakistan
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item blue" href="#"><i
+                                                class="fa-solid fa-location-crosshairs"></i> <b> Use Curent
+                                                Location</b></a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-location-dot"></i> See
+                                            ads in all Pakistan</a></li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                     <form class="d-flex" role="search">
                         <div class="input-group input-group-lg mb-3">
                             <input type="text" class="form-control" placeholder="Find Cars, Mobile Phones and more..."
                                 aria-label="Recipient’s username" aria-describedby="button-addon2">
-                            <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
+                            <button class="btn btn-outline-secondary" title="..." type="button" id="button-addon2"><i
                                     class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></button>
                         </div>
                     </form>
@@ -101,7 +119,9 @@
 
     </div>
 
-    <div id="body">
+    <!-- body starts here -->
+        
+    <div class="top">
 
         <!-- Tabs -->
 
@@ -110,245 +130,247 @@
                 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
                     aria-expanded="false"><b>All categories</b></a>
                 <ul class="dropdown-menu row">
-                    <div class="col-12 row top">
-                        <div class="col-3">
-                            <h5>
-                                Mobiles
-                            </h5>
-                            <p>
-                                Mobile Phones
-                                <br>Accessories
-                                <br>Smart Watches
-                                <br>Tablets
-                            </p>
-                            <h5>
-                                Vehicles
-                            </h5>
-                            <p>
-                                Cars
-                                <br>Cars Accessories
-                                <br>Spare Parts
-                                <br>Buses, Vans & Trucks
-                                <br>Rickshaw & Chingchi
-                                <br>Tractors & Trailers
-                                <br>Car Care
-                                <br>Cars on Installments
-                                <br>Other Vehicles
-                                <br>Boats
-                                <br>Oil & Lubricants
-                            </p>
-                            <h5>
-                                Property for Sale
-                            </h5>
-                            <p>
-                                Land & Plots
-                                <br>Houses
-                                <br>Apartments & Flats
-                                <br>Shops - Offices - Commercial Space
-                                <br>Portions & Floors
-                            </p>
-                            <h5>
-                                Property for Rent
-                            </h5>
-                            <p>
-                                Houses
-                                <br>Portions & Floors
-                                <br>Apartments & Flats
-                                <br>Shops - Offices - Commercial Space
-                                <br>Rooms
-                                <br>Vacation Rentals - Guest Houses
-                                <br>Roommates & Paying Guests
-                                <br>Land & Plots
-                            </p>
-                            <h5>
-                                Electronics & Home Appliances
-                            </h5>
-                            <p>
-                                Computers & Accessories
-                                <br>Televisions & Accessories
-                                <br>AC & Coolers
-                                <br>Generators, UPS & Power Solutions
-                                <br>Refrigerators & Freezers
-                                <br>Cameras & Accessories
-                                <br>Games & Entertainment
-                                <br>Kitchen Appliances
-                                <br>Other Home Appliances
-                                <br>Video-Audios
-                                <br>Fans
-                                <br>Washing Machines & Dryers
-                                <br>Microwaves & Ovens
-                                <br>Heaters & Geysers
-                                <br>Sewing Machines
-                                <br>Water Dispensers
-                                <br>Irons & Steamers
-                                <br>Air Purifiers & Humidifiers
-                            </p>
+                    <li>
+                        <div class="col-12 row top">
+                            <div class="col-3">
+                                <h5>
+                                    Mobiles
+                                </h5>
+                                <p>
+                                    Mobile Phones
+                                    <br>Accessories
+                                    <br>Smart Watches
+                                    <br>Tablets
+                                </p>
+                                <h5>
+                                    Vehicles
+                                </h5>
+                                <p>
+                                    Cars
+                                    <br>Cars Accessories
+                                    <br>Spare Parts
+                                    <br>Buses, Vans & Trucks
+                                    <br>Rickshaw & Chingchi
+                                    <br>Tractors & Trailers
+                                    <br>Car Care
+                                    <br>Cars on Installments
+                                    <br>Other Vehicles
+                                    <br>Boats
+                                    <br>Oil & Lubricants
+                                </p>
+                                <h5>
+                                    Property for Sale
+                                </h5>
+                                <p>
+                                    Land & Plots
+                                    <br>Houses
+                                    <br>Apartments & Flats
+                                    <br>Shops - Offices - Commercial Space
+                                    <br>Portions & Floors
+                                </p>
+                                <h5>
+                                    Property for Rent
+                                </h5>
+                                <p>
+                                    Houses
+                                    <br>Portions & Floors
+                                    <br>Apartments & Flats
+                                    <br>Shops - Offices - Commercial Space
+                                    <br>Rooms
+                                    <br>Vacation Rentals - Guest Houses
+                                    <br>Roommates & Paying Guests
+                                    <br>Land & Plots
+                                </p>
+                                <h5>
+                                    Electronics & Home Appliances
+                                </h5>
+                                <p>
+                                    Computers & Accessories
+                                    <br>Televisions & Accessories
+                                    <br>AC & Coolers
+                                    <br>Generators, UPS & Power Solutions
+                                    <br>Refrigerators & Freezers
+                                    <br>Cameras & Accessories
+                                    <br>Games & Entertainment
+                                    <br>Kitchen Appliances
+                                    <br>Other Home Appliances
+                                    <br>Video-Audios
+                                    <br>Fans
+                                    <br>Washing Machines & Dryers
+                                    <br>Microwaves & Ovens
+                                    <br>Heaters & Geysers
+                                    <br>Sewing Machines
+                                    <br>Water Dispensers
+                                    <br>Irons & Steamers
+                                    <br>Air Purifiers & Humidifiers
+                                </p>
+                            </div>
+                            <div class="col-3">
+                                <h5>
+                                    Bikes
+                                </h5>
+                                <p>
+                                    Motorcycles
+                                    <br>Bicycles
+                                    <br>Spare Parts
+                                    <br>Bikes Accessories
+                                    <br>Scooters
+                                    <br>ATV & Quads
+                                </p>
+                                <h5>
+                                    Business, Industrial & Agriculture
+                                </h5>
+                                <p>
+                                    Other Business & Industry
+                                    <br>Food & Restaurants
+                                    <br>Medical & Pharma
+                                    <br>Trade & Industrial Machinery
+                                    <br>Business for Sale
+                                    <br>Construction & Heavy Machinery
+                                    <br>Agriculture
+                                </p>
+                                <h5>
+                                    Services
+                                </h5>
+                                <p>
+                                    Other Services
+                                    <br>Home & Office Repair
+                                    <br>Tuitions & Academies
+                                    <br>Car Rental
+                                    <br>Domestic Help
+                                    <br>Web Development
+                                    <br>Travel & Visa
+                                    <br>Drivers & Taxi
+                                    <br>Event Services
+                                    <br>Electronics & Computer Repair
+                                    <br>Consultancy Services
+                                    <br>Construction Services
+                                    <br>Health & Beauty
+                                    <br>Farm & Fresh Food
+                                    <br>Architecture & Interior Design
+                                    <br>Movers & Packers
+                                    <br>Video & Photography
+                                    <br>Renting Services
+                                    <br>Car Services
+                                    <br>Catering & Restaurant
+                                    <br>Tailor Services
+                                    <br>Camera Installation
+                                    <br>Insurance Services
+                                </p>
+                            </div>
+                            <div class="col-3">
+                                <h5>
+                                    Jobs
+                                </h5>
+                                <p>
+                                    Other Jobs
+                                    <br>Online
+                                    <br>Part Time
+                                    <br>Sales
+                                    <br>Restaurants & Hospitality
+                                    <br>Customer Service
+                                    <br>Marketing
+                                    <br>Domestic Staff
+                                    <br>Education
+                                    <br>Content Writing
+                                    <br>Medical
+                                    <br>Delivery Riders
+                                    <br>IT & Networking
+                                    <br>Accounting & Finance
+                                    <br>Graphic Design
+                                    <br>Security
+                                    <br>Clerical & Administration
+                                    <br>Hotels & Tourism
+                                    <br>Engineering
+                                    <br>Manufacturing
+                                    <br>Human Resources
+                                    <br>Real Estate
+                                    <br>Advertising & PR
+                                    <br>Internships
+                                    <br>Architecture & Interior Design
+                                </p>
+                                <h5>
+                                    Animals
+                                </h5>
+                                <p>
+                                    Hens
+                                    <br>Parrots
+                                    <br>Cats
+                                    <br>Livestock
+                                    <br>Dogs
+                                    <br>Pet Food & Accessories
+                                    <br>Pigeons
+                                    <br>Rabbits
+                                    <br>Finches
+                                    <br>Fish
+                                    <br>Other Birds
+                                    <br>Fertile Eggs
+                                    <br>Ducks
+                                    <br>Other Animals
+                                    <br>Doves
+                                    <br>Peacocks
+                                    <br>Horses
+                                </p>
+                            </div>
+                            <div class="col-3">
+                                <h5>
+                                    Furniture & Home Decor
+                                </h5>
+                                <p>
+                                    Sofa & Chairs
+                                    <br>Beds & Wardrobes
+                                    <br>Tables & Dining
+                                    <br>Other Household Items
+                                    <br>Office Furniture
+                                    <br>Home Decoration
+                                    <br>Garden & Outdoor
+                                    <br>Painting & Mirrors
+                                    <br>Curtains & Blinds
+                                    <br>Rugs & Carpets
+                                    <br>Bathroom Accessories
+                                </p>
+                                <h5>
+                                    Fashion & Beauty
+                                </h5>
+                                <p>
+                                    Clothes
+                                    <br>Watches
+                                    <br>Wedding
+                                    <br>Footwear
+                                    <br>Skin & Hair
+                                    <br>Jewellery
+                                    <br>Bags
+                                    <br>Fragrance
+                                    <br>Fashion Accessories
+                                    <br>Makeup
+                                    <br>Other Fashion
+                                </p>
+                                <h5>
+                                    Books, Sports & Hobbies
+                                </h5>
+                                <p>
+                                    Gym & Fitness
+                                    <br>Sports Equipment
+                                    <br>Other Hobbies
+                                    <br>Books & Magazines
+                                    <br>Musical Instruments
+                                </p>
+                                <h5>
+                                    Kids
+                                </h5>
+                                <p>
+                                    Kids Vehicles
+                                    <br>Baby Gear
+                                    <br>Toys
+                                    <br>Kids Furniture
+                                    <br>Swings & Slides
+                                    <br>Kids Clothing
+                                    <br>Kids Accessories
+                                    <br>Bath & Diapers
+                                </p>
+                            </div>
                         </div>
-                        <div class="col-3">
-                            <h5>
-                                Bikes
-                            </h5>
-                            <p>
-                                Motorcycles
-                                <br>Bicycles
-                                <br>Spare Parts
-                                <br>Bikes Accessories
-                                <br>Scooters
-                                <br>ATV & Quads
-                            </p>
-                            <h5>
-                                Business, Industrial & Agriculture
-                            </h5>
-                            <p>
-                                Other Business & Industry
-                                <br>Food & Restaurants
-                                <br>Medical & Pharma
-                                <br>Trade & Industrial Machinery
-                                <br>Business for Sale
-                                <br>Construction & Heavy Machinery
-                                <br>Agriculture
-                            </p>
-                            <h5>
-                                Services
-                            </h5>
-                            <p>
-                                Other Services
-                                <br>Home & Office Repair
-                                <br>Tuitions & Academies
-                                <br>Car Rental
-                                <br>Domestic Help
-                                <br>Web Development
-                                <br>Travel & Visa
-                                <br>Drivers & Taxi
-                                <br>Event Services
-                                <br>Electronics & Computer Repair
-                                <br>Consultancy Services
-                                <br>Construction Services
-                                <br>Health & Beauty
-                                <br>Farm & Fresh Food
-                                <br>Architecture & Interior Design
-                                <br>Movers & Packers
-                                <br>Video & Photography
-                                <br>Renting Services
-                                <br>Car Services
-                                <br>Catering & Restaurant
-                                <br>Tailor Services
-                                <br>Camera Installation
-                                <br>Insurance Services
-                            </p>
-                        </div>
-                        <div class="col-3">
-                            <h5>
-                                Jobs
-                            </h5>
-                            <p>
-                                Other Jobs
-                                <br>Online
-                                <br>Part Time
-                                <br>Sales
-                                <br>Restaurants & Hospitality
-                                <br>Customer Service
-                                <br>Marketing
-                                <br>Domestic Staff
-                                <br>Education
-                                <br>Content Writing
-                                <br>Medical
-                                <br>Delivery Riders
-                                <br>IT & Networking
-                                <br>Accounting & Finance
-                                <br>Graphic Design
-                                <br>Security
-                                <br>Clerical & Administration
-                                <br>Hotels & Tourism
-                                <br>Engineering
-                                <br>Manufacturing
-                                <br>Human Resources
-                                <br>Real Estate
-                                <br>Advertising & PR
-                                <br>Internships
-                                <br>Architecture & Interior Design
-                            </p>
-                            <h5>
-                                Animals
-                            </h5>
-                            <p>
-                                Hens
-                                <br>Parrots
-                                <br>Cats
-                                <br>Livestock
-                                <br>Dogs
-                                <br>Pet Food & Accessories
-                                <br>Pigeons
-                                <br>Rabbits
-                                <br>Finches
-                                <br>Fish
-                                <br>Other Birds
-                                <br>Fertile Eggs
-                                <br>Ducks
-                                <br>Other Animals
-                                <br>Doves
-                                <br>Peacocks
-                                <br>Horses
-                            </p>
-                        </div>
-                        <div class="col-3">
-                            <h5>
-                                Furniture & Home Decor
-                            </h5>
-                            <p>
-                                Sofa & Chairs
-                                <br>Beds & Wardrobes
-                                <br>Tables & Dining
-                                <br>Other Household Items
-                                <br>Office Furniture
-                                <br>Home Decoration
-                                <br>Garden & Outdoor
-                                <br>Painting & Mirrors
-                                <br>Curtains & Blinds
-                                <br>Rugs & Carpets
-                                <br>Bathroom Accessories
-                            </p>
-                            <h5>
-                                Fashion & Beauty
-                            </h5>
-                            <p>
-                                Clothes
-                                <br>Watches
-                                <br>Wedding
-                                <br>Footwear
-                                <br>Skin & Hair
-                                <br>Jewellery
-                                <br>Bags
-                                <br>Fragrance
-                                <br>Fashion Accessories
-                                <br>Makeup
-                                <br>Other Fashion
-                            </p>
-                            <h5>
-                                Books, Sports & Hobbies
-                            </h5>
-                            <p>
-                                Gym & Fitness
-                                <br>Sports Equipment
-                                <br>Other Hobbies
-                                <br>Books & Magazines
-                                <br>Musical Instruments
-                            </p>
-                            <h5>
-                                Kids
-                            </h5>
-                            <p>
-                                Kids Vehicles
-                                <br>Baby Gear
-                                <br>Toys
-                                <br>Kids Furniture
-                                <br>Swings & Slides
-                                <br>Kids Clothing
-                                <br>Kids Accessories
-                                <br>Bath & Diapers
-                            </p>
-                        </div>
-                    </div>
+                    </li>
                 </ul>
             </li>
             <li class="nav-item">
@@ -374,380 +396,714 @@
             </li>
         </ul>
 
-        <img src="./assets/images/slider.webp">
+        <!-- Slider -->
+
+        <img src="./assets/images/slider.webp" width="100%" alt="">
+
+        <!-- Categories -->
 
         <div>
             <h3>All Categories</h3>
             <div class="cat">
                 <div>
-                    <img src="./assets/images/all-cat/mobiles.png">
+                    <img src="./assets/images/all-cat/mobiles.png" alt="" width="100%">
                     <h5>Mobiles</h5>
                 </div>
                 <div>
-                    <img src="./assets/images/all-cat/vehicles.png">
+                    <img src="./assets/images/all-cat/vehicles.png" alt="" width="100%">
                     <h5>Vehicles</h5>
                 </div>
                 <div>
-                    <img src="./assets/images/all-cat/property-for-sale.png">
+                    <img src="./assets/images/all-cat/property-for-sale.png" alt="" width="100%">
                     <h5>Property for Sale</h5>
                 </div>
                 <div>
-                    <img src="./assets/images/all-cat/property-for-rent.png">
+                    <img src="./assets/images/all-cat/property-for-rent.png" alt="" width="100%">
                     <h5>Property for Rent</h5>
                 </div>
                 <div>
-                    <img src="./assets/images/all-cat/electronics-&-home-appliances.png">
+                    <img src="./assets/images/all-cat/electronics-&-home-appliances.png" alt="" width="100%">
                     <h5>Electronics & Home Appliances</h5>
                 </div>
                 <div>
-                    <img src="./assets/images/all-cat/bikes.png">
+                    <img src="./assets/images/all-cat/bikes.png" alt="" width="100%">
                     <h5>Bikes</h5>
                 </div>
                 <div>
-                    <img src="./assets/images/all-cat/business-industrial-&-agriculture.png">
+                    <img src="./assets/images/all-cat/business-industrial-&-agriculture.png" alt="" width="100%">
                     <h5>Business, Industrial & Agriculture</h5>
                 </div>
                 <div>
-                    <img src="./assets/images/all-cat/services.png">
+                    <img src="./assets/images/all-cat/services.png" alt="" width="100%">
                     <h5>Services</h5>
                 </div>
                 <div>
-                    <img src="./assets/images/all-cat/jobs.png">
+                    <img src="./assets/images/all-cat/jobs.png" alt="" width="100%">
                     <h5>Jobs</h5>
                 </div>
                 <div>
-                    <img src="./assets/images/all-cat/animals.png">
+                    <img src="./assets/images/all-cat/animals.png" alt="" width="100%">
                     <h5>Animals</h5>
                 </div>
                 <div>
-                    <img src="./assets/images/all-cat/furniture-&-home-decor.png">
+                    <img src="./assets/images/all-cat/furniture-&-home-decor.png" alt="" width="100%">
                     <h5>Furniture & Home Decor</h5>
                 </div>
                 <div>
-                    <img src="./assets/images/all-cat/fashion-&-beauty.png">
+                    <img src="./assets/images/all-cat/fashion-&-beauty.png" alt="" width="100%">
                     <h5>Fashion & Beauty</h5>
                 </div>
                 <div>
-                    <img src="./assets/images/all-cat/books-sports-&-hobbies.png">
+                    <img src="./assets/images/all-cat/books-sports-&-hobbies.png" alt="" width="100%">
                     <h5>Books, Sports & Hobbies</h5>
                 </div>
                 <div>
-                    <img src="./assets/images/all-cat/kids.png">
+                    <img src="./assets/images/all-cat/kids.png" alt="" width="100%">
                     <h5>Kids</h5>
                 </div>
             </div>
         </div>
 
+        <!-- Mobile Phones -->
 
-        <div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
+        <div class="view">
+            <h2>Mobile Phones</h2>
+            <button type="button" class="btn btn-light blue">
+                <h5>View More <i class="fa-solid fa-greater-than"></i></h5>
+            </button>
         </div>
-        <div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="container">
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 360px;">
+                    <img src="./assets/images/mobile-phones/card2.webp" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title">Rs 268,000</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p class="discriptions">Iphone 14 Pro Max 256GB PTA Approved</p>
+                        <p>Bahadurabad, Karachi</p>
+                        <p class="text">3 days ago</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+            </a>
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 360px;">
+                    <img src="./assets/images/mobile-phones/card1.webp" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title">Rs 150,000</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p class="discriptions">Iphone 15 pro</p>
+                        <p>Raza Abad, Faisalabad</p>
+                        <p class="text">18 hours ago</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+            </a>
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 360px;">
+                    <img src="./assets/images/mobile-phones/card3.webp" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title">Rs 19,600</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p class="discriptions">iPhone 15 Pro Max JV (256GB) Available On Easy Installment Plan</p>
+                        <p>DHA Defence, Lahore</p>
+                        <p class="text">1 week ago</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+            </a>
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 360px;">
+                    <img src="./assets/images/mobile-phones/card4.webp" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title">Rs 65,000</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p class="discriptions">iPhone 14 iCloud locked</p>
+                        <p>Johar Town Phase 2, Lahore</p>
+                        <p class="text">4 weeks ago</p>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
-        <div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
+
+        <!-- Cars -->
+        
+        <div class="view">
+            <h2>Cars</h2>
+            <button type="button" class="btn btn-light blue">
+                <h5>View More <i class="fa-solid fa-greater-than"></i></h5>
+            </button>
         </div>
-        <div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="container">
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 360px;">
+                    <img src="./assets/images/cars/card1.webp" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title">Rs 5,600,000</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p class="discriptions">Honda civic x oriel prosmetic</p>
+                        <p>Bahria Town - Sector F, Lahore</p>
+                        <p class="text">1 day ago</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+            </a>
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 360px;">
+                    <img src="./assets/images/cars/card2.webp" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title">Rs 7,200,000</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p class="discriptions">Toyota Hilux Vigo Champ TRD Sportivo 2015 Model</p>
+                        <p>G-11, Islamabad</p>
+                        <p class="text">3 weeks ago</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+            </a>
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 360px;">
+                    <img src="./assets/images/cars/card3.webp" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title">Rs 25,500,000</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p class="discriptions">MERCEDES Benz EQC 400 4Matic - 2021</p>
+                        <p>PCSIR Society Phase 2, Lahore</p>
+                        <p class="text">3 days ago</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+            </a>
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 360px;">
+                    <img src="./assets/images/cars/card4.webp" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title">Rs 8,000,000</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p class="discriptions">Toyota Prius Alpha 2018</p>
+                        <p>Madina Town, Faisalabad</p>
+                        <p class="text">1 week ago</p>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
-        <div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
+
+        <!-- Bikes & Motorcycles -->
+
+        <div class="view">
+            <h2>Bikes & Motorcycles</h2>
+            <button type="button" class="btn btn-light blue">
+                <h5>View More <i class="fa-solid fa-greater-than"></i></h5>
+            </button>
         </div>
-        <div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="container">
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 360px;">
+                    <img src="./assets/images/bikes/card1.webp" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title">Rs 275,000</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p class="discriptions">Honda 125 Self Start Gold Edition</p>
+                        <p>Ghauri Town Phase 4A, Islamabad</p>
+                        <p class="text">1 day ago</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+            </a>
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 360px;">
+                    <img src="./assets/images/bikes/card2.webp" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title">Rs 340,000</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p class="discriptions">Yamaha YBR 125G | Model 2022 | Yamaha In Bikes | Total Geniune</p>
+                        <p>Shadpura, Daska</p>
+                        <p class="text">3 weeks ago</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+            </a>
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 360px;">
+                    <img src="./assets/images/bikes/card3.webp" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title">Rs 10,000</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p class="discriptions">United US 70 2025 Model Bike Available on Easy Installment</p>
+                        <p>Bilal Gunj, Lahore</p>
+                        <p class="text">3 weeks ago</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+            </a>
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 360px;">
+                    <img src="./assets/images/bikes/card4.webp" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title">Rs 360,000</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p class="discriptions">i am selling my ybrYamaha YBR 125G Model 2022 | | Total Geniune</p>
+                        <p>Jalalpur Pirwala, Multan</p>
+                        <p class="text">23 hours ago</p>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
-        <div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
+
+        <!-- Houses -->
+
+        <div class="view">
+            <h2>Houses</h2>
+            <button type="button" class="btn btn-light blue">
+                <h5>View More <i class="fa-solid fa-greater-than"></i></h5>
+            </button>
         </div>
-        <div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="container">
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 360px;">
+                    <img src="./assets/images/houses/card1.webp" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title">Rs 17,000,000</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p class="discriptions">5 marla Luxurious House for Sale in Newcity Phase II, wahcantt</p>
+                        <p>New City Phase 2, Wah</p>
+                        <p class="text">5 hours ago</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+            </a>
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 360px;">
+                    <img src="./assets/images/houses/card2.webp" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title">Rs 38,000,000</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p class="discriptions">BEAUTIFUL LUXURY HOME FOR SALE</p>
+                        <p>Faisal Town - F-18, Islamabad</p>
+                        <p class="text">3 days ago</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+            </a>
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 360px;">
+                    <img src="./assets/images/houses/card3.webp" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title">Rs 65,000,000</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p class="discriptions">Stunning Slightly Used 1-Kanal Bungalow for Sale Double Unit with...</p>
+                        <p>DHA Phase 4, Lahore</p>
+                        <p class="text">3 weeks ago</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+            </a>
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 360px;">
+                    <img src="./assets/images/houses/card4.webp" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title">Rs 21,000,000</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p class="discriptions">Double Story House Is Available For Sale In Police Society Scheme 33...
+                        </p>
+                        <p>Police Society, Karachi</p>
+                        <p class="text">3 weeks ago</p>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
+
+        <!-- Video-Audios -->
+
+        <div class="view">
+            <h2>Video-Audios</h2>
+            <button type="button" class="btn btn-light blue">
+                <h5>View More <i class="fa-solid fa-greater-than"></i></h5>
+            </button>
+        </div>
+        <div class="container">
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 360px;">
+                    <img src="./assets/images/video-audio/card1.webp" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title">Rs 11,500</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p class="discriptions">Walkie Talkie | Wireless Set Baofeng uv 82 Two Way Radio</p>
+                        <p>Others, Faisalabad</p>
+                        <p class="text">3 weeks ago</p>
+                    </div>
+                </div>
+            </a>
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 360px;">
+                    <img src="./assets/images/video-audio/card2.webp" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title">Rs 26,000</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p class="discriptions">JBL Flip 6</p>
+                        <p>Gulshan-e-Iqbal, Karachi</p>
+                        <p class="text">1 week ago</p>
+                    </div>
+                </div>
+            </a>
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 360px;">
+                    <img src="./assets/images/video-audio/card3.webp" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title">Rs 10,500</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p class="discriptions">Walkie talkie ,Motorola, kenwood Samsung | Wirless Set |Motrola TD...
+                        </p>
+                        <p>DHA Defence, Lahore</p>
+                        <p class="text">4 weeks ago</p>
+                    </div>
+                </div>
+            </a>
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 360px;">
+                    <img src="./assets/images/video-audio/card4.webp" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title">Rs 7,500</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p class="discriptions">Walkie talkie ,Motorola, kenwood Samsung | Wirless Set |Motrola Tc999
+                        </p>
+                        <p>Hall Road, Lahore</p>
+                        <p class="text">4 weeks ago</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Tablets -->
+
+        <div class="view">
+            <h2>Tablets</h2>
+            <button type="button" class="btn btn-light blue">
+                <h5>View More <i class="fa-solid fa-greater-than"></i></h5>
+            </button>
+        </div>
+        <div class="container">
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 360px;">
+                    <img src="./assets/images/tablets/card1.webp" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title">Rs 48,500</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p class="discriptions">Xiaomi Redmi Pad 128 GB 10/10</p>
+                        <p>Johar Town Phase 2, Lahore</p>
+                        <p class="text">20 hours ago</p>
+                    </div>
+                </div>
+            </a>
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 360px;">
+                    <img src="./assets/images/tablets/card2.jpg" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title">Rs 7,999</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p class="discriptions">Tabs for kids Gaming & Office work (Samsung,Lenovo,Amazon,Huawei,LG)</p>
+                        <p>Model Town, Lahore</p>
+                        <p class="text">2 weeks ago</p>
+                    </div>
+                </div>
+            </a>
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 360px;">
+                    <img src="./assets/images/tablets/card3.webp" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title">Rs 10,999</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p class="discriptions">Mega Discount Offer | Tablets | Office Tabs | Samsung | Ipads | Lenovo
+                        </p>
+                        <p>Korangi, Karachi</p>
+                        <p class="text">5 days ago</p>
+                    </div>
+                </div>
+            </a>
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 360px;">
+                    <img src="./assets/images/tablets/card4.jpg" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title">Rs 3,000</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p class="discriptions">Amazon Kindle Paperwhite eReader Book Reader Generation Oasis Voya...
+                        </p>
+                        <p>Gulberg 3, Lahore</p>
+                        <p class="text">2 days ago</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Land & Plots -->
+
+        <div class="view">
+            <h2>Land & Plots</h2>
+            <button type="button" class="btn btn-light blue">
+                <h5>View More <i class="fa-solid fa-greater-than"></i></h5>
+            </button>
+        </div>
+        <div class="container">
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 360px;">
+                    <img src="./assets/images/land/card1.webp" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title">Rs 175,000,000</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p class="discriptions">Beautiful Plot Investor Price 1st Come 1st Buy</p>
+                        <p>F-11, Islamabad</p>
+                        <p class="text">3 weeks ago</p>
+                    </div>
+                </div>
+            </a>
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 360px;">
+                    <img src="./assets/images/land/card2.webp" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title">Rs 4,500,000</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p class="discriptions">5 Marla Residential Plot For Sale In Bahria Orchard Phase 2 Raiwind
+                            Ro...</p>
+                        <p>Bahria Orchard, Lahore</p>
+                        <p class="text">20 hours ago</p>
+                    </div>
+                </div>
+            </a>
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 360px;">
+                    <img src="./assets/images/land/card3.webp" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title">Rs 23,500,000</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p class="discriptions">Z2 BLOCK NEAR TO THIS 1230 PLOT FOR SALE</p>
+                        <p>DHA Phase 7 - Block Z2, Lahore</p>
+                        <p class="text">4 weeks ago</p>
+                    </div>
+                </div>
+            </a>
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 360px;">
+                    <img src="./assets/images/land/card4.webp" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title">Rs 16,000,000</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p class="discriptions">1 Kanal Plot for Sale in IEP Town, Block E5 Prime Location Ideal for...
+                        </p>
+                        <p>IEP Engineers Town - Block E5, Lahore</p>
+                        <p class="text">4 weeks ago</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Jobs -->
+
+        <div class="view">
+            <h2>Jobs</h2>
+            <button type="button" class="btn btn-light blue">
+                <h5>View More <i class="fa-solid fa-greater-than"></i></h5>
+            </button>
+        </div>
+        <div class="container">
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 320px;">
+                    <img src="./assets/images/jobs/card1.webp" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title discriptions">Assistant Accountant</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p>Gajju Matah, Lahore</p>
+                        <p class="text">1 week ago</p>
+                    </div>
+                </div>
+            </a>
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 320px;">
+                    <img src="./assets/images/jobs/card2.webp" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title discriptions">Home base | Assignment work | part time Job | Onl...
+                            </h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p>Cantt, Rawalpindi</p>
+                        <p class="text">2 weeks ago</p>
+                    </div>
+                </div>
+            </a>
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 320px;">
+                    <img src="./assets/images/jobs/card3.webp" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title discriptions">Customer Representative (Just Females Required)</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p>Johar Town Phase 1, Lahore</p>
+                        <p class="text">4 weeks ago</p>
+                    </div>
+                </div>
+            </a>
+            <a href="...">
+                <div class="card cards" style="width: 19rem; height: 320px;">
+                    <img src="./assets/images/jobs/card4.webp" class="card-img-top" alt="..." width="300px"
+                        height="200px">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title discriptions">female job</h5>
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
+                        <p>DHA Phase 1, Lahore</p>
+                        <p class="text">1 week ago</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="row col-12 bottom">
+            <div class="col-4">
+                <img src="./assets/images/bottom.webp" width="100%" alt="">
+            </div>
+            <div class="col-4">
+                <h2>Try the OLX app</h2>
+                <h5>Buy, sell and find just about anything using the app on your mobile.</h5>
+            </div>
+            <div class="col-4">
+                <p><b>Get your app today</b></p>
+                <img src="./assets/images/appstore.svg" alt="" width="130px">
+                <img src="./assets/images/googleplay.svg" alt="" width="130px">
+                <img src="./assets/images/appgallery.svg" alt="" width="130px">
+            </div>
+
+        </div>
+
     </div>
 
+    <!-- jquery cdn (cdnjs.com)-->
+    <script src="./assets/owlcarousel/jquery.min.js"></script>
+
+    <!-- owl carousel cdn (cdnjs.com)-->
+    <script src="./assets/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- owl carousel plugin-->
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel();
+        });
+    </script>
+
+    <!-- owl carousel setup-->
+    <!-- Please add owl-carousel setup here -->
+
+    <!-- bootstrap cdn -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
+
+    <!-- swiper carousel setup-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- swiper carousel setup-->
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'vertical',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+
 </body>
 
 </html>
