@@ -65,33 +65,64 @@
     color: black;
 }
 
-/* all-cat */
+/* breadcrumb */
 
-h3 {
-    margin-top: 40px;
+.breadcrumb {
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.cat {
-    display: flex;
-    flex-wrap: wrap;
+a {
+    text-decoration: none;
+    color: black;
 }
 
-.cat div {
-    margin: 0 40px 0 10px;
-    width: 90px;
+/* carousel */
+
+.slide {
+    width: 100%;
+    height: 500px;
+}
+
+.border {
+    margin-bottom: 15px;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: contain;
+}
+
+/* product name */
+
+.productname {
+    padding: 10px;
+}
+
+.flex {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
 }
 
-.cat h5 {
-    margin: 10px 0 10px 0;
-    font-size: 15px;
+.fa-xl {
+    margin: 5px;
 }
 
-/* cards */
+/* product details */
+
+.details {
+    margin: 20px;
+    display: flex;
+}
+
+.details p {
+    width: 200px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* related adds */
 
 .view {
     display: flex;
@@ -105,7 +136,7 @@ h2 {
 
 .container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 a {
@@ -117,7 +148,11 @@ a {
     font-size: 16px;
 }
 
-.container img {
+.cards img {
+    object-fit: cover;
+}
+
+.card-img-top {
     object-fit: cover;
 }
 
@@ -137,22 +172,28 @@ a {
     margin-top: -20px;
 }
 
-/* OLX app details */
 
-.bottom {
-    margin-top: 75px;
-    display: flex;
+/* customer details */
+
+.cusnmae {
+    margin-bottom: 70px;
+    padding: 20px 15px;
+}
+
+.cusnmae .details {
     align-items: center;
 }
 
-.app {
-    display: flex;
-    flex-direction: row;
+.details img {
+    margin-left: -25px;
+    margin-right: 10px;
 }
 
-.app img {
-    margin: 0 2px;
+.details p {
+    font-size: 14px;
 }
+
+
 
 /* footer starts here */
 
