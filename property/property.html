@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,9 +27,425 @@
     <link rel="stylesheet" href="./style.css">
     <title>Property</title>
 </head>
+
 <body>
-    
-    <h1>Work in progress</h1>
+
+    <!-- navbar 1 -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary line_1 top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/images/logo.jpg" alt="OLX" width="70" height="70"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse line_1" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll line_1" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item" style="margin-top: 5px;">
+                        <a class="nav-link" href="../motors/motor.html"><i class="fa-solid fa-car fa-2xl"></i>
+                            <b>Motors</b></a>
+                    </li>
+                    <li class="nav-item blue">
+                        <a class="nav-link" href="">
+                            <img src="./apartments.png" width="35px" alt="">
+                            <b>Property</b>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- navbar 2 -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <div class="nb2">
+                    <img src="../assets/images/logo.jpg" alt="" width="70px">
+                    <p><b>Property</b></p>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 size">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Sale</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"></a></li>
+                            <li><a class="dropdown-item" href="#">Lands & Plots</a></li>
+                            <li><a class="dropdown-item" href="#">Houses</a></li>
+                            <li><a class="dropdown-item" href="#">Appartments & Flats</a></li>
+                            <li><a class="dropdown-item" href="#">Shops / Offices/ Commercial Space</a></li>
+                            <li><a class="dropdown-item" href="#">Portions & Floors</a></li>
+                            <li><a class="dropdown-item" href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Rent</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"></a></li>
+                            <li><a class="dropdown-item" href="#">Houses</a></li>
+                            <li><a class="dropdown-item" href="#">Appartments & Flats</a></li>
+                            <li><a class="dropdown-item" href="#">Portions & Floors</a></li>
+                            <li><a class="dropdown-item" href="#">Shops / Offices/ Commercial Space</a></li>
+                            <li><a class="dropdown-item" href="#">Roommates & Paying Guests</a></li>
+                            <li><a class="dropdown-item" href="#">Rooms</a></li>
+                            <li><a class="dropdown-item" href="#">Vaxation Rentals & Guest Houses</a></li>
+                            <li><a class="dropdown-item" href="#">Lands & Plots</a></li>
+                            <li><a class="dropdown-item" href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav size">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"><img src="../innerpage/iconProfilePicture.png" alt=""
+                                width="50px"></a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Welcome to OLX Property</a></li>
+                            <button type="button" class="btn btn-secondary btn-dp">Log In</button>
+                            <button type="button" class="btn btn-primary btn-dp">Rejistor</button>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="btn btn-lg btn-outline-dark sell" type="submit"><i class="fa-solid fa-plus fa-lg"></i>
+                    <b> Sell</b>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+    <div style="background-color: rgb(166, 205, 246); padding: 40px;">
+        <div class="row top">
+            <div class="col-3 white">
+                <h4>Search properties for sale</h4>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-primary btn-grp">Sale</button>
+                    <button type="button" class="btn btn-primary btn-grp">Rent</button>
+                </div>
+                <select class="form-select border border-black" aria-label="Default select example">
+                    <option selected>Land & Plots</option>
+                    <option value="1">Houses</option>
+                    <option value="2">Apart & Flats</option>
+                    <option value="3">Shops / Offices / Commercial Space</option>
+                    <option value="4">Portions & Floors</option>
+                </select>
+                <select class="form-select border border-black" aria-label="Default select example">
+                    <option selected>Lahore</option>
+                    <option value="1">Rawalpindi</option>
+                    <option value="2">Faisalabad</option>
+                    <option value="3">Multan</option>
+                    <option value="4">Gujranwala</option>
+                    <option value="5">Sialkot</option>
+                </select>
+                <div class="flex">
+                    <div>
+                        Area Size
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Marla
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Square Feet</a></li>
+                            <li><a class="dropdown-item" href="#">Square Yards</a></li>
+                            <li><a class="dropdown-item" href="#">Square Meter</a></li>
+                            <li><a class="dropdown-item" href="#">Marla</a></li>
+                            <li><a class="dropdown-item" href="#">Kanal</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="input-group mb-3 border border-black">
+                        <span class="input-group-text" id="basic-addon1">#</span>
+                        <input type="text" class="form-control" placeholder="Min" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3 border border-black">
+                        <span class="input-group-text" id="basic-addon1">#</span>
+                        <input type="text" class="form-control" placeholder="Max" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <input type="range" class="form-range" id="customRange1">
+                <button type="button" class="btn btn-primary btn-sr"><b><i class="fa-solid fa-magnifying-glass"
+                            style="color: #ffffff;"></i> SEARCH</b></button>
+            </div>
+            <div class="col-8 white">   
+            </div>
+        </div>
+    </div>
+
+    <!-- cards -->
+
+    <div class="news">
+        <div class="view">
+            <h4>Latest News</h4>
+            <button type="button" class="btn btn-light blue">View All</button>
+        </div>
+        <div class="container row">
+            <div class="cards col-4">
+                <div>
+                    <img src="../assets/images/property/card1.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                    <p><b>Federal Excise Duty on Property Tran...</b></p>
+                    <p>Great news for the real estate sector in Pakistan: the federal excise duty on property
+                        transactions is to be removed...</p>
+                    <p>Apr 24, 2025</p>
+                </div>
+            </div>
+            <div class="cards col-4">
+                <div>
+                    <img src="../assets/images/property/card2.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                    <p><b>The Cost of Dreams: Revealing the...</b></p>
+                    <p>Building a house is a dream of many and you must be pretty close to turning your dream into
+                        reality. However, many get...</p>
+                    <p>Dec 23, 2024</p>
+                </div>
+            </div>
+            <div class="cards col-4">
+                <div>
+                    <img src="../assets/images/property/card3.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                    <p><b>Section 7E: Tax on Deemed Income...</b></p>
+                    <p>More bad news for the real estate or property market in Punjab. Just when the sluggish property
+                        market was awaiting...</p>
+                    <p>Feb 29, 2024</p>
+                </div>
+            </div>
+        </div>
+        <div class="container row">
+            <div class="cards col-4">
+                <div>
+                    <img src="../assets/images/property/card4.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                    <p><b>Location Matters: Why Location is Ke...</b></p>
+                    <p>“Location, location, location!” Youve probably heard this clichéd phrase in the property market
+                        at some point in your...</p>
+                    <p>Nov 24, 2023</p>
+                </div>
+            </div>
+            <div class="cards col-4">
+                <div>
+                    <img src="../assets/images/property/card1.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                    <p><b>How to Sell Your Home Faster Even i...</b></p>
+                    <p>In the current property market in Pakistan, unlike in the past, things arent as hot. With fewer
+                        buyers, some sellers...</p>
+                    <p>Sep 28, 2023</p>
+                </div>
+            </div>
+            <div class="cards col-4">
+                <div>
+                    <img src="../assets/images/property/card3.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                    <p><b>Making Section 7E Easy to Understa...</b></p>
+                    <p>Ever since the Income Tax Ordinance of 2001 was amended to include Section 7E in July 2022, it
+                        has sent shockwaves thr...</p>
+                    <p>Aug 17, 2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Browse More Properties -->
+
+    <div class="property">
+        <h4>Browse More Properties</h4>
+        <div class="row">
+            <div class="col-3 pro-link">
+                <p>Houses for Sale in Lahore</p>
+                <p>Houses for Sale in Gujranwala</p>
+            </div>
+            <div class="col-3 pro-link">
+                <p>Houses for Sale in Rawalpindi</p>
+                <p>Houses for Sale in Sialkot</p>
+            </div>
+            <div class="col-3 pro-link">
+                <p>Houses for Sale in Faisalabad</p>
+            </div>
+            <div class="col-3 pro-link">
+                <p>Houses for Sale in Multan</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 pro-link">
+                <p>Plots for Sale in Lahore</p>
+                <p>Plots for Sale in Gujranwala</p>
+            </div>
+            <div class="col-3 pro-link">
+                <p>Plots for Sale in Rawalpindi</p>
+                <p>Plots for Sale in Sialkot</p>
+            </div>
+            <div class="col-3 pro-link">
+                <p>Plots for Sale in Faisalabad</p>
+            </div>
+            <div class="col-3 pro-link">
+                <p>Plots for Sale in Multan</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 pro-link">
+                <p>Flats for Sale in Lahore</p>
+                <p>Flats for Sale in Gujranwala</p>
+            </div>
+            <div class="col-3 pro-link">
+                <p>Flats for Sale in Rawalpindi</p>
+                <p>Flats for Sale in Sialkot</p>
+            </div>
+            <div class="col-3 pro-link">
+                <p>Flats for Sale in Faisalabad</p>
+            </div>
+            <div class="col-3 pro-link">
+                <p>Flats for Sale in Multan</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 pro-link">
+                <p>Houses for Rent in Lahore</p>
+                <p>Houses for Rent in Sialkot</p>
+            </div>
+            <div class="col-3 pro-link">
+                <p>Houses for Rent in Rawalpindi</p>
+                <p>Houses for Rent in Gujranwala</p>
+            </div>
+            <div class="col-3 pro-link">
+                <p>Houses for Rent in Faisalabad</p>
+            </div>
+            <div class="col-3 pro-link">
+                <p>Houses for Rent in Multan</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 pro-link">
+                <p>Flats for Rent in Lahore</p>
+                <p>Flats for Rent in Gujranwala</p>
+            </div>
+            <div class="col-3 pro-link">
+                <p>Flats for Rent in Rawalpindi</p>
+                <p>Flats for Rent in Sialkot</p>
+            </div>
+            <div class="col-3 pro-link">
+                <p>Flats for Rent in Faisalabad</p>
+            </div>
+            <div class="col-3 pro-link">
+                <p>Flats for Rent in Multan</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- text -->
+
+    <div class="text">
+        <h5>Properties for Sale in Pakistan</h5>
+        <p>The government of Pakistan has introduced several reforms to facilitate the country’s property sphere, and
+            has allowed it to evolve in such a way that the prevailing housing shortage is timely met. The real estate
+            industry of Pakistan is on a fast-paced development path, further enabling the construction sector to
+            flourish as well. The properties available for sale in Pakistan are very well-equipped. You can easily find
+            affordable housing units, for people hailing from all walks of life.</p>
+
+        <p>Buy all sorts of properties for sale in Pakistan on OLX. Find the best properties for sale in all the major
+            cities of Pakistan including Lahore, Karachi, Islamabad, Gwadar, Rawalpindi, and Multan. Our sale and rent
+            services enable our prized consumers to easily buy houses for sale in Pakistan, and plots available for sale
+            as well. Search through the thousands of listings available here and find the perfect pick for you — with
+            OLX Properties! Furthermore, you can find several budget friendly and low priced properties for sale in
+            popular cities including Lahore, Islamabad, and Karachi.</p>
+
+        <h5>Properties for Rent in Pakistan</h5>
+        <p>For those seeking to rent properties in Pakistan, OLX Property offers ample listings of amazing opportunities
+            for you — be it for investment purposes or renting one out for yourself. If you want a house for rent,
+            located in any part of Pakistan, you can take advantage of these aforementioned lucrative listings uploaded
+            here. Find all types of properties for rent in Pakistan including listings of residential plots for sale,
+            commercial plots for sale, apart from houses for sale and/or rent. Primarily, OLX aims to enhance your
+            journey to buy and rent properties by helping you decipher and categorize the unit(s) you desire.</p>
+
+        <h5>Sell your properties now!</h5>
+        <p>At OLX, your comfort and convenience is our top-most priority. Our platform enables you to easily sell
+            properties (like houses for sale and plots for sale) online by effortlessly connecting you to thousands of
+            potential buyers. Start now by uploading good quality pictures, set the right price, put in the exact
+            location, and provide all the necessary and relevant information, and just sit back and watch numerous
+            potential buyers line-up to grab your property for sale.</p>
+    </div>
+
+    <!-- footer starts here -->
+
+    <div class="footer border-top border-black">
+        <div class="top footer row">
+            <div class="col-2">
+                <h5>Popular Categories</h5>
+                <p>
+                    Cars
+                    <br>Flats for rent
+                    <br>Mobile Phones
+                    <br>Jobs
+                </p>
+            </div>
+            <div class="col-2">
+                <h5>Trending Searches</h5>
+                <p>
+                    Bikes
+                    <br>Watches
+                    <br>Books
+                    <br>Dogs
+                </p>
+            </div>
+            <div class="col-2">
+                <h5>About Us</h5>
+                <p>
+                    About Dubizzle Group
+                    <br>OLX Blog
+                    <br>Contact Us
+                    <br>OLX for Businesses
+                </p>
+            </div>
+            <div class="col-2">
+                <h5>OLX</h5>
+                <p>
+                    Help
+                    <br>Sitemap
+                    <br>Terms of use
+                    <br>Privacy Policy
+                </p>
+            </div>
+            <div class="col-2">
+                <h5>Follow Us</h5>
+                <i class="fa-brands fa-twitter fa-xl icon"></i>
+                <i class="fa-brands fa-facebook fa-xl icon"></i>
+                <i class="fa-regular fa-circle-play fa-xl icon"></i>
+                <i class="fa-brands fa-instagram fa-xl icon"></i>
+                <div class="play">
+                    <img src="../assets/images/appstore.svg" alt="" width="100px">
+                    <img src="../assets/images/googleplay.svg" alt="" width="100px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="end">
+        Free Classifieds in Pakistan . © 2006-2025 OLX
+    </div>
 
     <!-- jquery cdn (cdnjs.com)-->
     <script src="./assets/owlcarousel/jquery.min.js"></script>
@@ -80,4 +497,5 @@
     </script>
 
 </body>
+
 </html>

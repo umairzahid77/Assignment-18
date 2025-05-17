@@ -33,13 +33,13 @@
 
     <!-- nav bar starts here -->
 
-    <div class="fixed-top top">
+    <div class="sticky-top top">
 
         <!-- navbar 1 -->
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary line_1">
             <div class="container-fluid line_1">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="../index.html">
                     <img src="../assets/images/logo.jpg" alt="OLX" width="70" height="70"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                     aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,7 +65,7 @@
 
         <!-- navbar 2 -->
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary line_1">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse line2" id="navbarScroll">
                     <ul class="navbar-nav my-lg-0 navbar-nav-scroll drop-down" style="--bs-scroll-height: 100px;">
@@ -503,165 +503,292 @@
             </div>
 
             <!-- related adds -->
-            <!-- <div class="view">
-                <h4><u>Explore More</u></h4>
-            </div>
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+
+            <h2><u>Explore More</u></h2>
+
+            <div id="carouselExampleAutoplaying" class="carousel carousel-dark slide high" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="container">
-                            <a href="...">
-                                <div class="card cards" style="width: 16rem; height: 360px;">
-                                    <img src="../assets/images/mobile-phones/card2.webp" class="card-img-top" alt="..."
-                                        width="300px" height="200px">
-                                    <div class="card-body">
-                                        <div>
-                                            <h5 class="card-title">Rs 150,000</h5>
-                                            <i class="fa-regular fa-heart fa-xl"></i>
-                                        </div>
-                                        <p class="discriptions">Iphone 15 pro</p>
-                                        <p>Raza Abad, Faisalabad</p>
-                                        <p class="text">18 hours ago</p>
+
+                    <!-- Mobile Phones -->
+
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <div class="view">
+                            <div class="card cards" style="width: 270px; height: 360px;">
+                                <img src="../assets/images/mobile-phones/card2.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="card-title">Rs 150,000</h5>
+                                        <i class="fa-regular fa-heart fa-xl"></i>
                                     </div>
+                                    <p class="discriptions">Iphone 15 pro</p>
+                                    <p>Raza Abad, Faisalabad</p>
+                                    <p class="text">18 hours ago</p>
                                 </div>
-                            </a>
-                            <a href="...">
-                                <div class="card cards" style="width: 16rem; height: 360px;">
-                                    <img src="../assets/images/mobile-phones/card3.webp" class="card-img-top" alt="..."
-                                        width="300px" height="200px">
-                                    <div class="card-body">
-                                        <div>
-                                            <h5 class="card-title">Rs 19,600</h5>
-                                            <i class="fa-regular fa-heart fa-xl"></i>
-                                        </div>
-                                        <p class="discriptions">iPhone 15 Pro Max JV (256GB) Available On Easy
-                                            Installment...</p>
-                                        <p>DHA Defence, Lahore</p>
-                                        <p class="text">1 week ago</p>
+                            </div>
+                            <div class="card cards" style="width: 270px; height: 360px;">
+                                <img src="../assets/images/mobile-phones/card3.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="card-title">Rs 19,600</h5>
+                                        <i class="fa-regular fa-heart fa-xl"></i>
                                     </div>
+                                    <p class="discriptions">iPhone 15 Pro Max JV (256GB) Available On Easy
+                                        Installment...</p>
+                                    <p>DHA Defence, Lahore</p>
+                                    <p class="text">1 week ago</p>
                                 </div>
-                            </a>
-                            <a href="...">
-                                <div class="card cards" style="width: 16rem; height: 360px;">
-                                    <img src="../assets/images/mobile-phones/card4.webp" class="card-img-top" alt="..."
-                                        width="300px" height="200px">
-                                    <div class="card-body">
-                                        <div>
-                                            <h5 class="card-title">Rs 65,000</h5>
-                                            <i class="fa-regular fa-heart fa-xl"></i>
-                                        </div>
-                                        <p class="discriptions">iPhone 14 iCloud locked</p>
-                                        <p>Johar Town Phase 2, Lahore</p>
-                                        <p class="text">4 weeks ago</p>
+                            </div>
+                            <div class="card cards" style="width: 270px; height: 360px;">
+                                <img src="../assets/images/mobile-phones/card4.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="card-title">Rs 65,000</h5>
+                                        <i class="fa-regular fa-heart fa-xl"></i>
                                     </div>
+                                    <p class="discriptions">iPhone 14 iCloud locked</p>
+                                    <p>Johar Town Phase 2, Lahore</p>
+                                    <p class="text">4 weeks ago</p>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="container">
-                            <a href="...">
-                                <div class="card cards" style="width: 16rem; height: 360px;">
-                                    <img src="../assets/images/mobile-phones/card2.webp" class="card-img-top" alt="..."
-                                        width="300px" height="200px">
-                                    <div class="card-body">
-                                        <div>
-                                            <h5 class="card-title">Rs 150,000</h5>
-                                            <i class="fa-regular fa-heart fa-xl"></i>
-                                        </div>
-                                        <p class="discriptions">Iphone 15 pro</p>
-                                        <p>Raza Abad, Faisalabad</p>
-                                        <p class="text">18 hours ago</p>
+
+                    <!-- Cars -->
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <div class="view">
+                            <div class="card cards" style="width: 270px; height: 360px;">
+                                <img src="../assets/images/cars/card1.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="card-title">Rs 5,600,000</h5>
+                                        <i class="fa-regular fa-heart fa-xl"></i>
                                     </div>
+                                    <p class="discriptions">Honda civic x oriel prosmetic</p>
+                                    <p>Bahria Town - Sector F, Lahore</p>
+                                    <p class="text">1 day ago</p>
                                 </div>
-                            </a>
-                            <a href="...">
-                                <div class="card cards" style="width: 16rem; height: 360px;">
-                                    <img src="../assets/images/mobile-phones/card3.webp" class="card-img-top" alt="..."
-                                        width="300px" height="200px">
-                                    <div class="card-body">
-                                        <div>
-                                            <h5 class="card-title">Rs 19,600</h5>
-                                            <i class="fa-regular fa-heart fa-xl"></i>
-                                        </div>
-                                        <p class="discriptions">iPhone 15 Pro Max JV (256GB) Available On Easy
-                                            Installment...</p>
-                                        <p>DHA Defence, Lahore</p>
-                                        <p class="text">1 week ago</p>
+                            </div>
+                            <div class="card cards" style="width: 270px; height: 360px;">
+                                <img src="../assets/images/cars/card2.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="card-title">Rs 7,200,000</h5>
+                                        <i class="fa-regular fa-heart fa-xl"></i>
                                     </div>
+                                    <p class="discriptions">Toyota Hilux Vigo Champ TRD Sportivo 2015 Model</p>
+                                    <p>G-11, Islamabad</p>
+                                    <p class="text">3 weeks ago</p>
                                 </div>
-                            </a>
-                            <a href="...">
-                                <div class="card cards" style="width: 16rem; height: 360px;">
-                                    <img src="../assets/images/mobile-phones/card4.webp" class="card-img-top" alt="..."
-                                        width="300px" height="200px">
-                                    <div class="card-body">
-                                        <div>
-                                            <h5 class="card-title">Rs 65,000</h5>
-                                            <i class="fa-regular fa-heart fa-xl"></i>
-                                        </div>
-                                        <p class="discriptions">iPhone 14 iCloud locked</p>
-                                        <p>Johar Town Phase 2, Lahore</p>
-                                        <p class="text">4 weeks ago</p>
+                            </div>
+                            <div class="card cards" style="width: 270px; height: 360px;">
+                                <img src="../assets/images/cars/card3.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="card-title">Rs 25,500,000</h5>
+                                        <i class="fa-regular fa-heart fa-xl"></i>
                                     </div>
+                                    <p class="discriptions">MERCEDES Benz EQC 400 4Matic - 2021</p>
+                                    <p>PCSIR Society Phase 2, Lahore</p>
+                                    <p class="text">3 days ago</p>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="container">
-                            <a href="...">
-                                <div class="card cards" style="width: 16rem; height: 360px;">
-                                    <img src="../assets/images/mobile-phones/card2.webp" class="card-img-top" alt="..."
-                                        width="300px" height="200px">
-                                    <div class="card-body">
-                                        <div>
-                                            <h5 class="card-title">Rs 150,000</h5>
-                                            <i class="fa-regular fa-heart fa-xl"></i>
-                                        </div>
-                                        <p class="discriptions">Iphone 15 pro</p>
-                                        <p>Raza Abad, Faisalabad</p>
-                                        <p class="text">18 hours ago</p>
+
+                    <!-- Bikes & Motorcycles -->
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <div class="view">
+                            <div class="card cards" style="width: 270px; height: 360px;">
+                                <img src="../assets/images/bikes/card1.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="card-title">Rs 275,000</h5>
+                                        <i class="fa-regular fa-heart fa-xl"></i>
                                     </div>
+                                    <p class="discriptions">Honda 125 Self Start Gold Edition</p>
+                                    <p>Ghauri Town Phase 4A, Islamab...</p>
+                                    <p class="text">1 day ago</p>
                                 </div>
-                            </a>
-                            <a href="...">
-                                <div class="card cards" style="width: 16rem; height: 360px;">
-                                    <img src="../assets/images/mobile-phones/card3.webp" class="card-img-top" alt="..."
-                                        width="300px" height="200px">
-                                    <div class="card-body">
-                                        <div>
-                                            <h5 class="card-title">Rs 19,600</h5>
-                                            <i class="fa-regular fa-heart fa-xl"></i>
-                                        </div>
-                                        <p class="discriptions">iPhone 15 Pro Max JV (256GB) Available On Easy
-                                            Installment...</p>
-                                        <p>DHA Defence, Lahore</p>
-                                        <p class="text">1 week ago</p>
+                            </div>
+                            <div class="card cards" style="width: 270px; height: 360px;">
+                                <img src="../assets/images/bikes/card2.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="card-title">Rs 340,000</h5>
+                                        <i class="fa-regular fa-heart fa-xl"></i>
                                     </div>
+                                    <p class="discriptions">Yamaha YBR 125G | Model 2022 | Yamaha In Bikes | Total
+                                        Geniune</p>
+                                    <p>Shadpura, Daska</p>
+                                    <p class="text">3 weeks ago</p>
                                 </div>
-                            </a>
-                            <a href="...">
-                                <div class="card cards" style="width: 16rem; height: 360px;">
-                                    <img src="../assets/images/mobile-phones/card4.webp" class="card-img-top" alt="..."
-                                        width="300px" height="200px">
-                                    <div class="card-body">
-                                        <div>
-                                            <h5 class="card-title">Rs 65,000</h5>
-                                            <i class="fa-regular fa-heart fa-xl"></i>
-                                        </div>
-                                        <p class="discriptions">iPhone 14 iCloud locked</p>
-                                        <p>Johar Town Phase 2, Lahore</p>
-                                        <p class="text">4 weeks ago</p>
+                            </div>
+                            <div class="card cards" style="width: 270px; height: 360px;">
+                                <img src="../assets/images/bikes/card3.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="card-title">Rs 10,000</h5>
+                                        <i class="fa-regular fa-heart fa-xl"></i>
                                     </div>
+                                    <p class="discriptions">United US 70 2025 Model Bike Available on Easy
+                                        Installment</p>
+                                    <p>Bilal Gunj, Lahore</p>
+                                    <p class="text">3 weeks ago</p>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- Houses -->
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <div class="view">
+                            <div class="card cards" style="width: 270px; height: 360px;">
+                                <img src="../assets/images/houses/card1.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="card-title">Rs 17,000,000</h5>
+                                        <i class="fa-regular fa-heart fa-xl"></i>
+                                    </div>
+                                    <p class="discriptions">5 marla Luxurious House for Sale in Newcity Phase II,
+                                        wahcantt</p>
+                                    <p>New City Phase 2, Wah</p>
+                                    <p class="text">5 hours ago</p>
+                                </div>
+                            </div>
+                            <div class="card cards" style="width: 270px; height: 360px;">
+                                <img src="../assets/images/houses/card2.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="card-title">Rs 38,000,000</h5>
+                                        <i class="fa-regular fa-heart fa-xl"></i>
+                                    </div>
+                                    <p class="discriptions">BEAUTIFUL LUXURY HOME FOR SALE</p>
+                                    <p>Faisal Town - F-18, Islamabad</p>
+                                    <p class="text">3 days ago</p>
+                                </div>
+                            </div>
+                            <div class="card cards" style="width: 270px; height: 360px;">
+                                <img src="../assets/images/houses/card3.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="card-title">Rs 65,000,000</h5>
+                                        <i class="fa-regular fa-heart fa-xl"></i>
+                                    </div>
+                                    <p class="discriptions">Stunning Slightly Used 1-Kanal Bungalow for Sale Double
+                                        Unit...</p>
+                                    <p>DHA Phase 4, Lahore</p>
+                                    <p class="text">3 weeks ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tablets -->
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <div class="view">
+                            <div class="card cards" style="width: 270px; height: 360px;">
+                                <img src="../assets/images/tablets/card1.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="card-title">Rs 48,500</h5>
+                                        <i class="fa-regular fa-heart fa-xl"></i>
+                                    </div>
+                                    <p class="discriptions">Xiaomi Redmi Pad 128 GB 10/10</p>
+                                    <p>Johar Town Phase 2, Lahore</p>
+                                    <p class="text">20 hours ago</p>
+                                </div>
+                            </div>
+                            <div class="card cards" style="width: 270px; height: 360px;">
+                                <img src="../assets/images/tablets/card2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="card-title">Rs 7,999</h5>
+                                        <i class="fa-regular fa-heart fa-xl"></i>
+                                    </div>
+                                    <p class="discriptions">Tabs for kids Gaming & Office work (Samsung, Lenovo...</p>
+                                    <p>Model Town, Lahore</p>
+                                    <p class="text">2 weeks ago</p>
+                                </div>
+                            </div>
+                            <div class="card cards" style="width: 270px; height: 360px;">
+                                <img src="../assets/images/tablets/card3.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="card-title">Rs 10,999</h5>
+                                        <i class="fa-regular fa-heart fa-xl"></i>
+                                    </div>
+                                    <p class="discriptions">Mega Discount Offer | Tablets | Office Tabs | Samsung | Ipads...</p>
+                                    <p>Korangi, Karachi</p>
+                                    <p class="text">5 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Land & Plots -->
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <div class="view">
+                            <div class="card cards" style="width: 270px; height: 360px;">
+                                <img src="../assets/images/land/card1.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="card-title">Rs 175,000,000</h5>
+                                        <i class="fa-regular fa-heart fa-xl"></i>
+                                    </div>
+                                    <p class="discriptions">Beautiful Plot Investor Price 1st Come 1st Buy</p>
+                                    <p>F-11, Islamabad</p>
+                                    <p class="text">3 weeks ago</p>
+                                </div>
+                            </div>
+                            <div class="card cards" style="width: 270px; height: 360px;">
+                                <img src="../assets/images/land/card2.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="card-title">Rs 4,500,000</h5>
+                                        <i class="fa-regular fa-heart fa-xl"></i>
+                                    </div>
+                                    <p class="discriptions">5 Marla Residential Plot For Sale In Bahria Orchard
+                                        Phase 2...</p>
+                                    <p>Bahria Orchard, Lahore</p>
+                                    <p class="text">20 hours ago</p>
+                                </div>
+                            </div>
+                            <div class="card cards" style="width: 270px; height: 360px;">
+                                <img src="../assets/images/land/card3.webp" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="card-title">Rs 23,500,000</h5>
+                                        <i class="fa-regular fa-heart fa-xl"></i>
+                                    </div>
+                                    <p class="discriptions">Z2 BLOCK NEAR TO THIS 1230 PLOT FOR SALE</p>
+                                    <p>DHA Phase 7 - Block Z2, Lahore</p>
+                                    <p class="text">4 weeks ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
                 </div>
-            </div> -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
 
         </div>
+
+        <!-- profile -->
 
         <div class="col-4">
 
